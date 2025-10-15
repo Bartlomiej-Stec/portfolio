@@ -34,10 +34,10 @@
             <div class="row align-items-center">
                 <div class="col">
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png"
-                        alt="Zdjęcie" />
+                        alt="Zdjęcie" style="width: 120px; height: 120px; object-fit: cover;" />
                     <div class="profile-content">
                         <h1 class="name">Bartłomiej Stec</h1>
-                        <h2 class="desc">PHP Developer</h2>
+                        <h2 class="desc">Fullstack Developer</h2>
                     </div><!--//profile-->
                 </div><!--//col-->
             </div><!--//row-->
@@ -51,11 +51,14 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">O mnie</h2>
                         <div class="content">
-                            <p>Jestem studentem informatyki na Politechnice Rzeszowskiej. Interesuje się informatyką, w
-                                szczególności programowaniem i w tym kierunku się rozwijam. Ucząc się stworzyłem kilka
-                                własnych projektów cieszących się popularnością użytkowników. Obecnie jestem członkiem
-                                koła naukowego ,,SKNI Kod” na uczelni. Poszukuję możliwości rozwoju zawodowego i
-                                zdobycia doświadczenia w branży IT. </p>
+                            <p>Obecnie studiuję informatykę, którą interesuję się od najmłodszych lat. W wieku 16 lat
+                                stworzyłem pierwszą poważną aplikację, która szybko zdobyła użytkowników i do dziś
+                                funkcjonuje jako komercyjny produkt. Od tamtej pory nieustannie rozwijam kolejne
+                                projekty - w każdym z nich sięgam po nowe technologie, by nauczyć się czegoś nowego i
+                                poszerzać swoje umiejętności. Dzięki temu potrafię szybko odnajdywać się w różnych
+                                frameworkach i językach programowania. Lubię myśleć nieszablonowo - często zamiast
+                                forsować rozwiązanie, szukam sprytniejszego sposobu, by problem po prostu przestał
+                                istnieć. </p>
 
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -79,22 +82,20 @@
 
 
                                 <div class="desc text-start">
-                                    <p>Wot-Recruitment jest komercyjnym projektem mojego pomysłu. Zrealizowałem go
-                                        samodzielnie dla graczy w grze World Of Tanks. Serwis umożliwia wyszukiwanie
-                                        graczy do klanu spełniających podane przez użytkownika kryteria. Dostępnych jest
-                                        też sporo dodatkowych opcji, które mają na celu maksymalnie usprawnić proces
-                                        rekrutacji np. wtyczka do przeglądarki, która otwiera wyszukanych graczy na
-                                        stronie gry i umożliwia zaproszenie wszystkich 1 kliknięciem. Automat zbierający
-                                        dane o graczach działa 24/7 analizując wiele milionów wpisów każdego dnia.
-                                        Serwis dostępny
-                                        jest również w języku angielskim i cieszy się popularnością (największy tego
-                                        typu serwis) z ponad 1500 zarejestrowanymi użytkownikami. </p>
+                                    <p>Projekt będący wyszukiwarką kandydatów do klanu w grze komputerowej. Korzysta z
+                                        zewnętrznych API analizując i agregując miliony rekordów danych umożliwiając
+                                        użytkownikom ich późniejsze filtrowanie. Używa samodzielnie wytrenowane modele
+                                        AI do automatycznego ustawiania optymalnych filtrów, podejmowania decyzji kiedy
+                                        warto następnym razem odświeżyć dane i szacowania brakujących informacji.
+                                        Projekt jest stale rozwijany i aktualizowany o nowe funkcjonalności. W projekcie
+                                        wykorzystano framework Laravel (php), bootstrap oraz relacyjną bazę danych
+                                        MySQL.</p>
                                     <h3 class="title mb-3 text-white">Screeny z serwisu</h3>
                                     <div class="item row">
                                         <div class="col-md-12 col-12">
                                             <a href="assets/images/projects/wot-recruitment/screen1.png"
                                                 data-lightbox="wot-recruitment"
-                                                data-title="Fragment formularza, w którym użytkownicy podają kryteria wyszukiwania">
+                                                data-title="Główny formularz wyszukiwania">
                                                 <img class="img-fluid project-image rounded shadow-sm"
                                                     src="assets/images/projects/wot-recruitment/screen1.png"
                                                     alt="Screen 1 Wot-Recruitment" />
@@ -127,6 +128,15 @@
                                                     alt="Screen 4 Wot-Recruitment" />
                                             </a>
                                         </div>
+                                        <div class="col-md-12 col-12">
+                                            <a href="assets/images/projects/wot-recruitment/screen5.png"
+                                                data-lightbox="wot-recruitment"
+                                                data-title="Podstrona śledzenia zdarzeń">
+                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                    src="assets/images/projects/wot-recruitment/screen5.png"
+                                                    alt="Screen 5 Wot-Recruitment" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div><!--//desc-->
                                 <a class="btn btn-cta-secondary" href="https://wot-recruitment.com" target="_blank"><i
@@ -137,184 +147,275 @@
 
                                 <div class="featured-image has-ribbon">
                                     <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/auto-reserve/banner.png" alt="Auto-Reserve" />
+                                        src="assets/images/projects/hostspotter/screen1.png" alt="Hostspotter" />
                                 </div>
-                                <h3 class="title mb-3 text-white">Serwis
-                                    Auto-Reserve</h3>
+                                <h3 class="title mb-3 text-white">Serwis Hostspotter - porównywarka cen</h3>
 
 
                                 <div class="desc text-start">
-                                    <p>Auto-Reserve to projekt mający na celu automatyzację często powtarzanej czynności
-                                        w grze World Of Tanks jaką jest uruchamianie bonusów klanowych. Większość klanów
-                                        w grze uruchamia je przez około 12h dziennie. Każdy bonus jest aktywny przez 2h,
-                                        po czym trzeba włączyć następny. Mogą to robić tylko osoby z odpowiednimi
-                                        uprawnieniami. Nie zawsze osoba, która
-                                        może to zrobić jest online. Z tego powodu stworzyłem system, który pozwala na
-                                        ustawienie harmonogramu bonusów wraz z możliwością nałożenia dodatkowych
-                                        warunków np. minimalnej liczby osób online, aby bonus został uruchomiony. Bot o
-                                        wskazanych porach sprawdza warunki i w razie ich spełnienia uruchamia
-                                        odpowiednie bonusy. Wszystko jest w pełni automatyczne i łatwe w konfiguracji.
-                                        Radzi sobie także w sytuacjach, gdy ktoś ręcznie uruchomi bonus o godzinie
-                                        zaburzającej
-                                        harmonogram. W takiej sytuacji przesuwane są wszystkie następne bonusy w czasie,
-                                        jeżeli maksymalny
-                                        podany czas opóźnienia nie został przekroczony. Serwis umożliwia również
-                                        wybranie strefy czasowej względem, której obliczany jest czas przy tworzeniu
-                                        harmonogramu. </p>
+                                    <p>Projekt pozwala wyszukiwać i przeglądać oferty hostingów, serwerów VPS oraz
+                                        domen. Główną trudnością w projekcie było znalezienie sposobu agregowania danych
+                                        z kompletnie różnych stron dostawców. Dane pochodzą z web scrapingu i
+                                        aktualizują się automatycznie. Ponadto aplikacja korzysta z API chatów AI do
+                                        ustawiania filtrów na podstawie cech szukanej usługi. W projekcie wykorzystano
+                                        Laravel (php), inertia, react.js, tailwind.css oraz biblioteki z gotowymi
+                                        komponentami css.</p>
                                     <h3 class="title mb-3 text-white">Screeny z serwisu</h3>
-                                    <div class="item row">
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/auto-reserve/screen1.png"
-                                                data-lightbox="auto-reserve"
-                                                data-title="Przykładowy harmonogram bonusów">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/auto-reserve/screen1.png"
-                                                    alt="Screen 1 Auto-Reserve" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/auto-reserve/screen2.png"
-                                                data-lightbox="auto-reserve"
-                                                data-title="Formularz dodawania nowego bonusu do harmonogramu">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/auto-reserve/screen2.png"
-                                                    alt="Screen 2 Auto-Reserve" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/auto-reserve/screen3.png"
-                                                data-lightbox="auto-reserve"
-                                                data-title="Dodatkowe ustawienia harmonogramu">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/auto-reserve/screen3.png"
-                                                    alt="Screen 3 Auto-Reserve" />
-                                            </a>
-                                        </div>
+                                    <div class="col-md-12 col-12">
+                                        <a href="assets/images/projects/hostspotter/screen2.png"
+                                            data-lightbox="hostspotter" data-title="Przykładowy wynik wyszukiwania">
+                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                src="assets/images/projects/hostspotter/screen2.png"
+                                                alt="Screen 2 hostspotter" />
+                                        </a>
                                     </div>
-                                </div><!--//desc-->
-                                <a class="btn btn-cta-secondary" href="https://auto-reserve.eu" target="_blank"><i
+                                    <div class="col-md-12 col-12">
+                                        <a href="assets/images/projects/hostspotter/screen3.png"
+                                            data-lightbox="hostspotter"
+                                            data-title="Formularz filtrowania wyników przez AI">
+                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                src="assets/images/projects/hostspotter/screen3.png"
+                                                alt="Screen 3 hostspotter" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <a href="assets/images/projects/hostspotter/screen4.png"
+                                            data-lightbox="hostspotter" data-title="Podstrona z kodami rabatowymi">
+                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                src="assets/images/projects/hostspotter/screen4.png"
+                                                alt="Screen 4 hostspotter" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <a href="assets/images/projects/hostspotter/screen5.png"
+                                            data-lightbox="hostspotter" data-title="Podstrona z opiniami">
+                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                src="assets/images/projects/hostspotter/screen5.png"
+                                                alt="Screen 5 hostspotter" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="btn btn-cta-secondary" href="https://hostspotter.com/" target="_blank"><i
                                         class="fas fa-link"></i> Przejdź do serwisu</a>
                             </div><!--//item-->
-                            <hr class="divider" />
                             <div class="item featured text-center">
 
                                 <div class="featured-image has-ribbon">
                                     <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/kierki/banner.png" alt="Kierki amerykańskie" />
+                                        src="assets/images/projects/cube/screen1.png" alt="Projekt kostka" />
                                 </div>
-                                <h3 class="title mb-3 text-white">Gra ,,Kierki
-                                    amerykańskie"</h3>
+                                <h3 class="title mb-3 text-white">Projekt kostka</h3>
+
 
                                 <div class="desc text-start">
-                                    <p>Gra ,,Kierki amerykańskie" powstała w ramach projektu realizowanego z przedmiotu
-                                        C++. Jest to gra karciana stworzona na wzór gry, która standardowo dostępna była
-                                        w systemie Windows XP. Gra odbywa się przeciwko komputerom AI z możliwością
-                                        wyboru jednego spośród 3 poziomów trudności. Na poziomie łatwym komputer kładzie
-                                        pierwszą napotkaną kartę, którą można zgodnie z zasadami położyć w danej
-                                        sytuacji. Na poziomie zaawansowanym komputer stara się grać pod swoje
-                                        indywidualne zwycięstwo. Kładzie możliwe najlepszą kartę w danej sytuacji biorąc
-                                        pod uwagę karty, które zostały już rzucone, pozostałe karty w puli oraz ryzyko
-                                        zagrania daną kartą. Na poziomie trudnym można powiedzieć, że komputer po części
-                                        oszukuje. Oprócz analizowania swoich kart i tego co było już na stole analizuje
-                                        karty gracza oraz innych komputerów. Na tym poziomie komputer nie gra pod swoje
-                                        zwycięstwo, ale pod porażkę gracza. Jeżeli natrafi się sytuacja, w której gracz
-                                        będzie mógł stracić, ale kosztem tego komputer też przegra, zrobi to. Dla
-                                        urozmaicenia rozgrywki, przeciwnicy AI mają nazwy postaci z serialu animowanego
-                                        ,,Pingwiny z Madagaskaru" i podczas gry komentują sytuację tekstami z serialu.
-                                    </p>
-                                    <h3 class="title mb-3 text-white">Przykładowy gameplay</h3>
-                                    <div class="item row">
-                                        <div class="col-md-12 col-12">
-                                            <video class="img-fluid" src="assets/video/kierki_amerykanskie.mp4" controls>
-                                                Your browser does not support the video tag.
-                                            </video>
-                                        </div>
+                                    <p>Projekt rozwiązuje kostkę rubika odczytując jej stan z kamery video, a następnie
+                                        pokazuje listę ruchów jakie należy wykonać aby ją ułożyć. Wykorzystuje
+                                        samodzielnie wytrenowany model AI do wyznaczania kolorów ścianek niezależnie od
+                                        oświetlenia. Algorytmy rozwiązywania kostki również zostały napisane
+                                        samodzielnie, bez gotowych bibliotek wykorzystując metodę LBL. Całość stworzona
+                                        jest w języku Python.</p>
+                                </div><!--//item-->
+                                <hr class="divider" />
+                                <div class="item featured text-center">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/auto-reserve/banner.png" alt="Auto-Reserve" />
                                     </div>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item featured text-center">
+                                    <h3 class="title mb-3 text-white">Serwis Auto-Reserve</h3>
 
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/wot-campaign/banner.png" alt="Wot-Campaign" />
-                                </div>
-                                <h3 class="title mb-3 text-white">Strona Wot-Campaign</h3>
 
-                                <div class="desc text-start">
-                                    <p>Strona pozwala sprawdzić statystyki danego klanu podczas wydarzenia w grze World
-                                        Of Tanks. Projekt powstał, ponieważ sposób prezentowania rankingu wydarzenia
-                                        przez twórcę gry nie pozwala na szybkie sprawdzenie najważniejszych informacji.
-                                        Korzystając więc z danych z API stworzyłem swoją wersję rankingu dodając również
-                                        odpowiednią kolorystykę pozwalającą na pierwszy rzut oka ocenić sytuację w danym
-                                        klanie. Strona spodobała się użytkownikom i podczas wydarzenia jest bardzo
-                                        chętnie odwiedzana.
-                                    </p>
-                                    <h3 class="title mb-3 text-white">Screeny ze strony</h3>
-                                    <div class="item row">
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/wot-campaign/screen1.png"
-                                                data-lightbox="wot-campaign" data-title="Screen ze strony">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/wot-campaign/screen1.png"
-                                                    alt="Screen 1 Wot-Campaign" />
-                                            </a>
+                                    <div class="desc text-start">
+                                        <p>Auto-Reserve to projekt mający na celu automatyzację często powtarzanej
+                                            czynności
+                                            w grze World Of Tanks jaką jest uruchamianie bonusów klanowych. Większość
+                                            klanów
+                                            w grze uruchamia je przez około 12h dziennie. Każdy bonus jest aktywny przez
+                                            2h,
+                                            po czym trzeba włączyć następny. Mogą to robić tylko osoby z odpowiednimi
+                                            uprawnieniami. Nie zawsze osoba, która
+                                            może to zrobić jest online. Z tego powodu stworzyłem system, który pozwala
+                                            na
+                                            ustawienie harmonogramu bonusów wraz z możliwością nałożenia dodatkowych
+                                            warunków np. minimalnej liczby osób online, aby bonus został uruchomiony.
+                                            Bot o
+                                            wskazanych porach sprawdza warunki i w razie ich spełnienia uruchamia
+                                            odpowiednie bonusy. Wszystko jest w pełni automatyczne i łatwe w
+                                            konfiguracji.
+                                            Radzi sobie także w sytuacjach, gdy ktoś ręcznie uruchomi bonus o godzinie
+                                            zaburzającej
+                                            harmonogram. W takiej sytuacji przesuwane są wszystkie następne bonusy w
+                                            czasie,
+                                            jeżeli maksymalny
+                                            podany czas opóźnienia nie został przekroczony. Serwis umożliwia również
+                                            wybranie strefy czasowej względem, której obliczany jest czas przy tworzeniu
+                                            harmonogramu. </p>
+                                        <h3 class="title mb-3 text-white">Screeny z serwisu</h3>
+                                        <div class="item row">
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/auto-reserve/screen1.png"
+                                                    data-lightbox="auto-reserve"
+                                                    data-title="Przykładowy harmonogram bonusów">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/auto-reserve/screen1.png"
+                                                        alt="Screen 1 Auto-Reserve" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/auto-reserve/screen2.png"
+                                                    data-lightbox="auto-reserve"
+                                                    data-title="Formularz dodawania nowego bonusu do harmonogramu">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/auto-reserve/screen2.png"
+                                                        alt="Screen 2 Auto-Reserve" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/auto-reserve/screen3.png"
+                                                    data-lightbox="auto-reserve"
+                                                    data-title="Dodatkowe ustawienia harmonogramu">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/auto-reserve/screen3.png"
+                                                        alt="Screen 3 Auto-Reserve" />
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/wot-campaign/screen2.png"
-                                                data-lightbox="wot-campaign" data-title="Screen ze strony">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/wot-campaign/screen2.png"
-                                                    alt="Screen 2 Wot-Campaign" />
-                                            </a>
-                                        </div>
+                                    </div><!--//desc-->
+                                    <a class="btn btn-cta-secondary" href="https://auto-reserve.eu" target="_blank"><i
+                                            class="fas fa-link"></i> Przejdź do serwisu</a>
+                                </div><!--//item-->
+                                <hr class="divider" />
+                                <div class="item featured text-center">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/clan-manager/screen1.png" alt="Klan manager" />
                                     </div>
-                                </div><!--//desc-->
-                                <a class="btn btn-cta-secondary" href="https://wot-campaign.online" target="_blank"><i
-                                        class="fas fa-link"></i> Przejdź do serwisu</a>
+                                    <h3 class="title mb-3 text-white">Projekt klan manager</h3>
 
 
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item featured text-center">
-
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/livechat/banner.png" alt="LiveChat" />
-                                </div>
-                                <h3 class="title mb-3 text-white">Projekt LiveChat</h3>
-
-                                <div class="desc text-start">
-                                    <p>Projekt realizowany w ramach koła naukowego ,,Skni Kod" wraz z kolegą ze studiów.
-                                        Serwis umożliwia uzytkownikowi stworzenie chatu, który może dodać na własną
-                                        stronę www. Za pośrednictwem tego chatu użytkownicy mogą kontaktować się z
-                                        działem wsparcia danej strony/serwisu. Komunikacja klient-server odbywa się za
-                                        pomocą websocketów. W panelu użytkownik może dostosować wygląd chatu, odpowiadać
-                                        na pytania klientów oraz zarządzać innymi członkami zespołu. Projekt nie jest jeszcze ukończony, ale najważniejsze funkcjonalności już działają.
-                                    </p>
-                                    <h3 class="title mb-3 text-white">Screeny z projektu</h3>
-                                    <div class="item row">
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/livechat/screen1.png"
-                                                data-lightbox="livechat" data-title="Panel zarządzania">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/livechat/screen1.png"
-                                                    alt="Screen 1 livechat" />
-                                            </a>
+                                    <div class="desc text-start">
+                                        <p>Projekt stworzony na własne potrzeby do zarządzania klanem w grze. Prezentuje
+                                            statystyki graczy, pozwala dokładnie sprawdzać ich konta oraz prowadzi
+                                            automatyczną rekrutację intergując się z API discorda i Gemini AI
+                                            rozpatrując podania i odpowiadając na pytania.</p>
+                                        <h3 class="title mb-3 text-white">Screeny z serwisu</h3>
+                                        <div class="item row">
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/clan-manager/screen2.png"
+                                                    data-lightbox="clan-manager"
+                                                    data-title="Ustawienia wymagań rekrutacji dla bota">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/clan-manager/screen2.png"
+                                                        alt="Screen 2 clan-manager" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/clan-manager/screen3.png"
+                                                    data-lightbox="clan-manager"
+                                                    data-title="Zgłaszanie podań dla użytkowników">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/clan-manager/screen3.png"
+                                                        alt="Screen 3 clan-manager" />
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12 col-12">
-                                            <a href="assets/images/projects/livechat/screen2.png"
-                                                data-lightbox="livechat" data-title="Edycja wyglądu chatu">
-                                                <img class="img-fluid project-image rounded shadow-sm"
-                                                    src="assets/images/projects/livechat/screen2.png"
-                                                    alt="Screen 2 livechat" />
-                                            </a>
-                                        </div>
+                                    </div><!--//desc-->
+                                    <a class="btn btn-cta-secondary" href="https://icoh.byst.re/" target="_blank"><i
+                                            class="fas fa-link"></i> Przejdź do serwisu</a>
+                                </div><!--//item-->
+                                <hr class="divider" />
+                                <div class="item featured text-center">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/kierki/banner.png" alt="Kierki amerykańskie" />
                                     </div>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
+                                    <h3 class="title mb-3 text-white">Gra ,,Kierki
+                                        amerykańskie"</h3>
+
+                                    <div class="desc text-start">
+                                        <p>Gra ,,Kierki amerykańskie" powstała w ramach projektu realizowanego z
+                                            przedmiotu
+                                            C++. Jest to gra karciana stworzona na wzór gry, która standardowo dostępna
+                                            była
+                                            w systemie Windows XP. Gra odbywa się przeciwko komputerom AI z możliwością
+                                            wyboru jednego spośród 3 poziomów trudności. Na poziomie łatwym komputer
+                                            kładzie
+                                            pierwszą napotkaną kartę, którą można zgodnie z zasadami położyć w danej
+                                            sytuacji. Na poziomie zaawansowanym komputer stara się grać pod swoje
+                                            indywidualne zwycięstwo. Kładzie możliwe najlepszą kartę w danej sytuacji
+                                            biorąc
+                                            pod uwagę karty, które zostały już rzucone, pozostałe karty w puli oraz
+                                            ryzyko
+                                            zagrania daną kartą. Na poziomie trudnym można powiedzieć, że komputer po
+                                            części
+                                            oszukuje. Oprócz analizowania swoich kart i tego co było już na stole
+                                            analizuje
+                                            karty gracza oraz innych komputerów. Na tym poziomie komputer nie gra pod
+                                            swoje
+                                            zwycięstwo, ale pod porażkę gracza. Jeżeli natrafi się sytuacja, w której
+                                            gracz
+                                            będzie mógł stracić, ale kosztem tego komputer też przegra, zrobi to. Dla
+                                            urozmaicenia rozgrywki, przeciwnicy AI mają nazwy postaci z serialu
+                                            animowanego
+                                            ,,Pingwiny z Madagaskaru" i podczas gry komentują sytuację tekstami z
+                                            serialu.
+                                        </p>
+                                        <h3 class="title mb-3 text-white">Przykładowy gameplay</h3>
+                                        <div class="item row">
+                                            <div class="col-md-12 col-12">
+                                                <video class="img-fluid" src="assets/video/kierki_amerykanskie.mp4"
+                                                    controls>
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <hr class="divider" />
+                                <div class="item featured text-center">
+
+                                    <div class="featured-image has-ribbon">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/livechat/banner.png" alt="LiveChat" />
+                                    </div>
+                                    <h3 class="title mb-3 text-white">Projekt LiveChat</h3>
+
+                                    <div class="desc text-start">
+                                        <p>Projekt realizowany w ramach koła naukowego ,,Skni Kod" wraz z kolegą ze
+                                            studiów.
+                                            Serwis umożliwia uzytkownikowi stworzenie chatu, który może dodać na własną
+                                            stronę www. Za pośrednictwem tego chatu użytkownicy mogą kontaktować się z
+                                            działem wsparcia danej strony/serwisu. Komunikacja klient-server odbywa się
+                                            za
+                                            pomocą websocketów. W panelu użytkownik może dostosować wygląd chatu,
+                                            odpowiadać
+                                            na pytania klientów oraz zarządzać innymi członkami zespołu.
+                                        </p>
+                                        <h3 class="title mb-3 text-white">Screeny z projektu</h3>
+                                        <div class="item row">
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/livechat/screen1.png"
+                                                    data-lightbox="livechat" data-title="Panel zarządzania">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/livechat/screen1.png"
+                                                        alt="Screen 1 livechat" />
+                                                </a>
+                                            </div>
+                                            <div class="col-md-12 col-12">
+                                                <a href="assets/images/projects/livechat/screen2.png"
+                                                    data-lightbox="livechat" data-title="Edycja wyglądu chatu">
+                                                    <img class="img-fluid project-image rounded shadow-sm"
+                                                        src="assets/images/projects/livechat/screen2.png"
+                                                        alt="Screen 2 livechat" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                            </div><!--//content-->
+                        </div><!--//section-inner-->
                 </section><!--//section-->
 
                 <section class="projects section">
@@ -324,45 +425,134 @@
                             <div class="item row">
                                 <div class="col-md-4 col-12">
 
-                                    <a href="assets/images/projects/clan-helper/banner.png" data-lightbox="clan-helper"
-                                        data-title="Strona ze statystykami graczy w danym klanie">
+                                    <a href="assets/images/projects/create-implementation/banner.png"
+                                        data-lightbox="create-implementation"
+                                        data-title="Rozszerzenie do visual studio code">
                                         <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/clan-helper/banner.png"
-                                            alt="Strona ze statystykami" />
+                                            src="assets/images/projects/create-implementation/banner.gif"
+                                            alt="Rozszerzenie do visual studio code" />
                                     </a>
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title text-white">Strona pokazująca statystyki z trybu klanowego</h3>
-                                    <p class="mb-2">Prosta strona, jeszcze nieudostępniona publicznie do sprawdzania
-                                        statystyk z bitew klanowych w grze World Of Tanks w odniesieniu do pozostałych
-                                        graczy w klanie. Pozwala łatwo stwierdzić kto jest za słaby oraz komu idzie
-                                        najlepiej.</p>
-
+                                    <h3 class="title text-white">Rozszerzenie do visual studio code</h3>
+                                    <p class="mb-2">Projekt dla programistów php do automatycznego tworzenia
+                                        implementacji interfejsu wraz z wymaganymi metodami lub dla istniejącej
+                                        implementacji poszukiwanie brakujących zależności</p>
+                                    <p><a class="more-link"
+                                            href="https://marketplace.visualstudio.com/items?itemName=Just4Devs.php-create-implementation"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Link</a>
+                                    </p>
                                 </div><!--//desc-->
                             </div><!--//item-->
                             <div class="item row">
                                 <div class="col-md-4 col-12">
 
-                                    <a href="assets/images/projects/clan-campaign/banner.png"
-                                        data-lightbox="clan-campaign" data-title="Zapisy na event w grze">
+                                    <a href="assets/images/projects/payments/banner.png" data-lightbox="payments"
+                                        data-title="Biblioteki do obsługi płatności w Laravel">
                                         <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/clan-campaign/banner.png"
-                                            alt="Zapisy na event w grze" />
+                                            src="assets/images/projects/payments/banner.png"
+                                            alt="Biblioteki do obsługi płatności w Laravel" />
                                     </a>
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title text-white">Serwis do zapisywania na event w grze (projekt
-                                        wewnętrzny na
-                                        potrzeby klanu)</h3>
-                                    <p class="mb-2">Prosty serwis wykorzystywany przez klan, który prowadzę przed
-                                        wydarzeniami w grze. Gracze mają możliwość zapisywania się, gdzie mogą podać
-                                        informację z kim chcieliby grać oraz ile będą mieć czasu. Widzą również inne
-                                        zapisane osoby i później po zakończeniu zapisów finalnie stworzone drużyny. </p>
-                                    <p><a class="more-link" href="https://clan-helper.eu/campaign/" target="_blank"><i
-                                                class="fas fa-external-link-alt"></i>Przejdź do strony</a>
+                                    <h3 class="title text-white">Biblioteki do obsługi płatności w Laravel</h3>
+                                    <p class="mb-2">Biblioteki do obsługi płatności cashbill, stripe oraz paypal w
+                                        prosty sposób. Zawierają wywołania do api, tabele do parametrów transakcji i
+                                        endpointy do weryfikacji płatności.</p>
+                                    <p><a class="more-link" href="https://github.com/Bartlomiej-Stec" target="_blank"><i
+                                                class="fas fa-external-link-alt"></i>Link</a>
                                     </p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                            <div class="item row">
+                                <div class="col-md-4 col-12">
+
+                                    <a href="assets/images/projects/face-id/banner.png" data-lightbox="face-id"
+                                        data-title="Face ID">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/face-id/banner.png" alt="Face ID" />
+                                    </a>
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title text-white">Face ID</h3>
+                                    <p class="mb-2">Program stworzony w pythonie do rejestracji i weryfikacji
+                                        użytkowników za pomocą danych biometrycznych twarzy (projekt zaliczeniowy).
+                                        Wykorzystuje różne modele i metryki do wyznaczania embeddingu twarzy i ich
+                                        porównywania. Pozwala zarówno na porównanie 1:1 jak i 1:N. Dodatkową
+                                        funkcjonalnością jest możliwość pobrania parametrów twarzy, w których znajdują
+                                        się informacje o nastroju, płci, kolorze skóry.</p>
+                                    <p><a class="more-link" href="https://github.com/Bartlomiej-Stec/face-id"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Link</a>
+                                    </p>
+                                </div><!--//desc-->
+                            </div>
+                            <div class="item row">
+                                <div class="col-md-4 col-12">
+
+                                    <a href="assets/images/projects/pybox/banner.png" data-lightbox="pybox"
+                                        data-title="Pybox">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/pybox/banner.png" alt="Pybox" />
+                                    </a>
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title text-white">Pybox</h3>
+                                    <p class="mb-2">Grupowy projekt zaliczeniowy, w którym odpowiadałem za stworzenie
+                                        API do aplikacji działającej w chmurze, która miała pozwalać użytkownikom na
+                                        dodawanie zadań programistycznych i ich wykonywania. Każde zadanie było
+                                        sprawdzane poprzez wywołanie kodu w izolowanym kontenerze.</p>
+                                    <p><a class="more-link" href="https://github.com/Bartlomiej-Stec/pybox-baw"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Link</a>
+                                    </p>
+                                </div><!--//desc-->
+                            </div>
+                            <div class="item row">
+                                <div class="col-md-4 col-12">
+
+                                    <a href="assets/images/projects/mlp/banner.png" data-lightbox="mlp"
+                                        data-title="mlp">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/mlp/banner.png" alt="mlp" />
+                                    </a>
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title text-white">Biblioteka do sieci neuronowych MLP w PHP</h3>
+                                    <p class="mb-2">Projekt z prostą implementacją sieci neronowej typu MLP z
+                                        przyspieszeniem metodą momentum i adaptacyjnym współczynnikiem uczenia.
+                                        Umożliwia tworzenie prostych sieci neuronowych w php.</p>
+                                    <p><a class="more-link" href="https://github.com/Bartlomiej-Stec/php-mlp"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Link</a>
+                                    </p>
+                                </div><!--//desc-->
+                            </div>
+                            <div class="item row">
+                                <div class="col-md-4 col-12">
+
+                                    <a href="assets/images/projects/wot-campaign/banner.png"
+                                        data-lightbox="wot-campaign"
+                                        data-title="Strona ze statystykami graczy w wydarzeniu">
+                                        <img class="img-fluid project-image rounded shadow-sm"
+                                            src="assets/images/projects/wot-campaign/banner.png"
+                                            alt="Strona ze statystykami" />
+                                    </a>
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title text-white">Wot-Campaign</h3>
+                                    <p class="mb-2">Projekt archiwalny. Strona pozwalała sprawdzić statystyki danego
+                                        klanu podczas wydarzenia w grze World
+                                        Of Tanks. Projekt powstał, ponieważ sposób prezentowania rankingu wydarzenia
+                                        przez twórcę gry nie pozwalał na szybkie sprawdzenie najważniejszych informacji.
+                                        Korzystając więc z danych z API stworzyłem swoją wersję rankingu dodając również
+                                        odpowiednią kolorystykę pozwalającą na pierwszy rzut oka ocenić sytuację w danym
+                                        klanie. Strona spodobała się użytkownikom i podczas wydarzenia była bardzo
+                                        chętnie odwiedzana.</p>
+
                                 </div><!--//desc-->
                             </div><!--//item-->
                             <div class="item row">
@@ -411,91 +601,27 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Umiejętności</h2>
                         <div class="content">
-                            <p class="intro">
-                                Paski postępu prezentują jak dobrze czuję się zaznajomiony z daną technologią.</p>
+                            <p class="intro"></p>
 
                             <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">PHP<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="W PHP tworzyłem większość swoich projektów. Niektóre z nich bazowały na własnym systemie typu View-Controller. Z językiem mam do czynienia od około 2017 roku."><i
-                                                class="fas fa-info-circle"></i>Bardzo dobrze</span></h3>
-
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%"
-                                            aria-valuenow="93" aria-valuemin="0" aria-valuemax="93"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">MySQL<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="Większość projektów korzystała z bazy danych, gdzie zapisywane i odczytywane były informacje. Do komunikacji z bazą wykorzystywałem zwykle MySql."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 82%"
-                                            aria-valuenow="82" aria-valuemin="0" aria-valuemax="82"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Bootstrap<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="Przed rozpoczęciem relizacji projektu najczęściej szukam szablonu bootstrap, który następnie edytuje i dostosowuje do potrzeb danego projektu. Wiem jak tworzyć responsywne strony, które dobrze wyglądają zarówno na komputerze jak i na urządzeniach mobilnych."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Laravel<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="Laravel wykorzystuje w swoich najnowszych projektach."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="W tworzonych projektach zwykle używałem javascriptu do wstępnej walidacji (aby zmniejszyć obciążenie serwera), wysyłania danych do serwera bez przeładowywania strony oraz do wywoływania zdarzeń po danej akcji wykonanej przez użytkownika."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML, CSS<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left"
-                                            title="W HTML znam większość przydatnych tagów. CSS zwykle nie tworzyłem od zera, tylko korzystałem z szablonów i je przerabiałem. Znam jednak zasady i bez problemu potrafię dostosować wygląd strony do potrzeb."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Git<span class="level-label" data-bs-toggle="tooltip"
-                                            data-placement="left"
-                                            title="Gita używałem w projektach studenckich, które wymagały pracy grupowej. Znam najważniejsze zasady oraz sposoby rozwiązywania konfliktów w zmienionych plikach."><i
-                                                class="fas fa-info-circle"></i>Dobrze</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%"
-                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
+                                <ul>
+                                    <li>Bardzo dobra znajomość Laravel i PHP</li>
+                                    <li>Dobra znajomość języka Python</li>
+                                    <li>Dobra znajomość baz danych i SQL</li>
+                                    <li>Dobra znajomość JavaScript i React.js</li>
+                                    <li>Znajomość Bootstrap, Tailwind CSS</li>
+                                    <li>Korzystanie z gita</li>
+                                    <li>Korzystanie z dockera</li>
+                                    <li>CI/CD (GitHub Actions, GitLab CI/CD)</li>
+                                    <li>Znajomość Linuxa i zarządzania serwerami</li>
+                                    <li>Testowanie kodu</li>
+                                    <li>Szukanie podatności i testowanie bezpieczeństwa</li>
+                                    <li>Znajomość wzorców projektowych i dobrych praktyk pisania kodu (SOLID itp.)</li>
+                                    <li>Podstawowa znajomość wielu innych języków programowania i frameworków</li>
+                                </ul>
                             </div>
                         </div><!--//content-->
+
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
@@ -505,8 +631,13 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Politechnika Rzeszowska</h3>
-                                <h4 class="university">Kierunek informatyka (studia inżynierskie) <span class="year">od
-                                        2021</span></h4>
+                                <h4 class="university">Kierunek informatyka (studia magisterskie) <span class="year">od
+                                        2025</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Politechnika Rzeszowska</h3>
+                                <h4 class="university">Kierunek informatyka (studia inżynierskie) <span
+                                        class="year">(2021-2025)</span></h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Liceum nr. 2 w Rzeszowie</h3>
@@ -538,15 +669,6 @@
             </div><!--//secondary-->
         </div><!--//row-->
     </div><!--//masonry-->
-
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            Bootstrap template <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a
-                    href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
 
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
